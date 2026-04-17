@@ -3,61 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ryan Jhay Corapao Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
+<body data-theme="dark">
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">STI Student</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">Ryan Jhay Corapao</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </nav>
 
-    <header id="about" class="hero">
-        <div class="hero-content">
-            <img src = "Assets/ad8adc7f-d69e-4ef1-9d6c-08806992659b.jpg">
-            <h1>Hi, I'm <span class="highlight">Ryan Jhay Corapao</span></h1>
-            <p>Full-Stack Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <img src="Assets/5b92595d-8f9a-4931-b9fc-b7764d66df14.jpg" alt="User Avatar" class="avatar1">
+            <h1>Hi, I'm <span class="gradient-text">Ryan Jhay</span></h1>
+            <p>Full Stack Developer crafting exceptional digital experiences with modern technologies. 
+                Passionate about clean code and innovative solutions.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
-    </header>
+    </section>
 
-    <section id="projects" class="projects-section">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Mobile Login System</h3>
-                    <p>A secure Android application built with Java and Kotlin featuring XML-based layouts.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Frontend & Backend Developer</h3>
+                <p>With 5+ years of experience, I specialize in building responsive web applications using modern JavaScript frameworks and scalable backend architectures. I thrive on turning complex problems into simple, beautiful solutions.</p>
+                <p>Currently focused on React, Node.js, and cloud-native development. Always learning and adapting to the latest technologies.</p>
+                <div class="skills-grid">
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">C#</div>
+                    <div class="skill-tag">html</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">SQL Server Management Tool</div>
+                    <div class="skill-tag">Visual Studio Code</div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Responsive Dashboard</h3>
-                    <p>A web-based interface using CSS Grid and Flexbox for optimal viewing on all devices.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Database Design</h3>
-                    <p>Relational database mapping and normalization using SQL Server.</p>
+            <div class="profile-image">
+                <div>
+                    <img src="Assets/5b92595d-8f9a-4931-b9fc-b7764d66df14.jpg" alt="User Avatar" class="avatar">
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <h2>Get In Touch</h2>
-        <p>Email: jhayryancorapao15@gmail.com</p>
-        <div class="social-links">
-            <a href="www.linkedin.com/in/jhayryan-corapao-09a3a6386">LinkedIn</a>
-            <a href="https://github.com/jhayryancorapao15-lgtm">GitHub</a>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Payroll Management System</h3>
+                    <p class="project-description">Full-stack Payroll Management System with real-time Employee Management, payroll computation,
+                                                    and with a advance admin dashboard.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag"></span>
+                        <span class="tech-tag"></span>
+                        <span class="tech-tag"></span>
+                        <span class="tech-tag"></span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank"><i class="https://github.com/jhayryancorapao15-lgtm"></i> Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Pong of Duty</h3>
+                    <p class="project-description">This is a game that you play inside or outside of yopur house, this is a free pingpong
+                                                    app designed to entertain you.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Nope</span>
+                        <span class="tech-tag">Nothing</span>
+                        <span class="tech-tag">Blah!</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank"><i class="https://github.com/jhayryancorapao15-lgtm"></i> Git</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Database</h3>
+                    <p class="project-description"></p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Oracle</span>
+                        <span class="tech-tag">XAMPP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" target="_blank"><i class="https://github.com/jhayryancorapao15-lgtm"></i> Git</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>jhayryancorapao15@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>09616297468</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Pangasinan, PHI</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Alex Johnson. Built with ❤️ and lots of ☕.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
